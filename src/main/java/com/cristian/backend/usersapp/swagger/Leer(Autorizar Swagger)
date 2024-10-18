@@ -1,0 +1,16 @@
+Pasos a seguir para Autorizar en Swagger:
+
+        1) Ir al postman y ejecutar esta ruta http://localhost:8080/login de tipo POST.
+        2) introducir las credenciales en el apartado body:
+            ej:
+                 {
+                     "Ausername": "admin",
+                     "password": "12345"
+                 }
+        3) Copiar el token que haya generado.
+
+        4) Ve a http://localhost:8080/swagger-ui/index.html.
+        5) En la parte superior derecha, verás un botón que dice "Authorize".
+        6) Haz clic en "Authorize" e introduce tu token JWT con el prefijo "Bearer "
+        (por ejemplo, Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...).
+        7) Una vez autorizado, deberías poder probar los endpoints que requieren autenticación.
